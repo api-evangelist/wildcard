@@ -1,7 +1,27 @@
 aid: wildcard
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/wildcard.png
 name: Wildcard
-description: 'Wildcard is a company surfaced as a portfolio company of paradigm and added to the API Evangelist
-  network as a stub for enrichment. Sector: gaming. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Wildcard is a PvP collectible-card-based MOBA (multiplayer online battle
+  arena) developed by Playful Studios and currently in Early Access on Steam. Players
+  pick Champions, assemble decks of Summon creature cards, and compete in real-time
+  strategic arena battles where deck-building matters as much as mechanical skill.
+  The game ships collectible cosmetics (Wildpass, Flair, Wildfile) with a web3 angle
+  — the Wildpass is a Polygon NFT collection tradeable on Magic Eden — and is backed
+  as a portfolio company of the crypto venture firm Paradigm. Its backend gaming services
+  are built on Beamable and Unreal Engine. No first-party public developer API, SDK,
+  or documentation portal is published; this profile is a company/lead record in the
+  API Evangelist network. Sector: gaming.'
 url: https://raw.githubusercontent.com/api-evangelist/wildcard/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Gaming
+- MOBA
+- Card Game
+- Web3
+- NFT
+- Polygon
+- Playful Studios
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wildcard-domain-security.yml
 - type: Website
   url: https://www.wildcardgame.com
+- type: Blog
+  url: https://www.wildcardgame.com/news
+- type: Support
+  url: https://discord.com/invite/QZRgv9M2UZ
+- type: SignUp
+  url: https://www.wildcardgame.com/playtesting
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
